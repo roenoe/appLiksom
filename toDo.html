@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do</title>
+</head>
+<body>
+    
+  <header>
+    <h1 class = "header">To Do</h1>
+    <div class = "dropdown">
+      <button class = "dropbtn">Menu</button>
+
+      <div class="dropdown-content">
+        <a href="./toDo.html">To Do</a>
+        <a href="./stats.html">Stats</a>
+        <a href="./admin.html">Admin</a>
+    </div>
+  </header>
+
+  <div class = userToDo>
+    <div class = "userHeader">
+      <img class = "pfp" src = "./img/Circle-filled-violet.png" alt = "pfp">
+      <h2 class = "profileName">Ivo Nøttseter</h2>
+      <button class = "giveTask">Tildel</button>
+    </div>
+
+    <ul class = "taskList">
+      <li class = "task">
+        {$task[1].name}
+        <button class = "progress">Bli ferdig/Begynn</button>
+        {$task[1].point} poeng
+      </li>
+
+      <li class = "task">
+        Bergen Storsenter en gammel dame
+        <button class = "progress">Bli ferdig/Begynn</button>
+        50 poeng
+      </li>
+      
+      <li class = "task">
+        Vaske benene 
+        <button class="progress">
+        Bli ferdig/begynn</button>5 poeng
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
